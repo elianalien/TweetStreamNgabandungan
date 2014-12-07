@@ -19,15 +19,15 @@ class screenLayout(FloatLayout):
 
 		#buttons
 		larrow = Button(background_normal='arrows/scroll-left.png',
-						background_down='arrows/scroll-left-hit.png',
-						size_hint = (0.06,0.1),
-						pos_hint={'x':0, 'y':.5},
-						)
+				background_down='arrows/scroll-left-hit.png',
+				size_hint = (0.06,0.1),
+				pos_hint={'x':0, 'y':.5},
+				)
 		rarrow = Button(background_normal='arrows/scroll-right.png',
-						background_down='arrows/scroll-right-hit.png',
-						size_hint = (0.06,0.1),
-						pos_hint={'x':0.93, 'y':.5}						
-						)
+				background_down='arrows/scroll-right-hit.png',
+				size_hint = (0.06,0.1),
+				pos_hint={'x':0.93, 'y':.5}						
+				)
 		
 
 		#carousel gallery
@@ -35,9 +35,9 @@ class screenLayout(FloatLayout):
 		for i in range(1,5):
 			src = "images/%d.png" % i
 			images = Image(source=src, 
-						   pos_hint = {'x':0.15,'y':0.25},
-						   size_hint= (0.7,0.7),
-						   allow_stretch=True)
+				   pos_hint = {'x':0.15,'y':0.25},
+				   size_hint= (0.7,0.7),
+				   allow_stretch=True)
 			root.add_widget(images)	
 
 		self.add_widget(root)
